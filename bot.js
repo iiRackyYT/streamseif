@@ -11,7 +11,7 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "الاي دي حقك") return;
+  if (message.author.id !== "596016095081791531") return;
 
   
   if (message.content.startsWith(prefix + 'setwatch')) {
@@ -55,4 +55,4 @@ if (message.content.startsWith(prefix + 'setgame')) {
 });
 
 
-client.login("توكن حقك");
+client.login(process.env.BOT_TOKEN);
