@@ -1,0 +1,24 @@
+const adminprefix = "!";
+const devs = ['«·«ÌœÌ Õﬁﬂ']
+client.on('message', message => {
+  var argresult = message.content.split(` `).slice(1).join(' ');
+    if (!devs.includes(message.author.id)) return;
+   
+if (message.content.startsWith(adminprefix + 'x')) {
+  client.user.setGame(argresult);
+    message.channel.sendMessage(`**__${argresult}__ ‹„  ‹€‹Ì‹— »‹·«Ì‰‹ﬁ «·‹Ï!**`)
+} else
+  if (message.content.startsWith(adminprefix + 'xx')) {
+client.user.setUsername(argresult).then
+    message.channel.sendMessage(`**__${argresult}__ ‹„  ‹€‹Ì‹— «”‹‹„ «·‹Ï**!`)
+return message.reply("**·«Ì‹„‹ﬂ‹‰  ‹€‹Ì‹— «”‹„ «·«‰ ‰‹ ‹Ÿ‹«— ”‹«⁄‹ ‹«‰**:stopwatch: ");
+} else
+  if (message.content.startsWith(adminprefix + 'xxx')) {
+client.user.setAvatar(argresult);
+  message.channel.sendMessage(`**__${argresult}__ ‹‹„  ‹‹€‹Ì‹‹— ’‹‹Ê— «·‹Ï !**`);
+      } else    
+if (message.content.startsWith(adminprefix + 'xxxx')) {
+  client.user.setGame(argresult, "https://www.twitch.tv/idk");
+    message.channel.sendMessage(`**__${argresult}__  ‹‹„  ‹€‹‹Ì‹‹— Õ‹‹«·‹Â «·‹‹Ï !**`)
+}
+});
