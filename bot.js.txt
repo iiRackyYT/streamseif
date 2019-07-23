@@ -1,24 +1,24 @@
 const adminprefix = "!";
-const devs = ['ÇáÇíÏí ÍŞß']
+const devs = ['596016095081791531']
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
    
-if (message.content.startsWith(adminprefix + 'x')) {
+if (message.content.startsWith(adminprefix + 'playing')) {
   client.user.setGame(argresult);
-    message.channel.sendMessage(`**__${argresult}__ÊÜã ÊÜÛÜíÜÑ ÈÜáÇíäÜŞ ÇáÜì!**`)
+    message.channel.sendMessage(`**__${argresult}__ØªÙ€Ù… ØªÙ€ØºÙ€ÙŠÙ€Ø± Ø¨Ù€Ù„Ø§ÙŠÙ†Ù€Ù‚ Ø§Ù„Ù€Ù‰!**`)
 } else
-  if (message.content.startsWith(adminprefix + 'xx')) {
+  if (message.content.startsWith(adminprefix + 'name')) {
 client.user.setUsername(argresult).then
-    message.channel.sendMessage(`**__${argresult}__ÊÜã ÊÜÛÜíÜÑ ÇÓÜÜã ÇáÜì**!`)
-return message.reply("**áÇíÜãÜßÜä ÊÜÛÜíÜÑ ÇÓÜã ÇáÇä äÜÊÜÙÜÇÑ ÓÜÇÚÜÊÜÇä**:stopwatch: ");
+    message.channel.sendMessage(`**__${argresult}__ØªÙ€Ù… ØªÙ€ØºÙ€ÙŠÙ€Ø± Ø§Ø³Ù€Ù€Ù… Ø§Ù„Ù€Ù‰**!`)
+return message.reply("**Ù„Ø§ÙŠÙ€Ù…Ù€ÙƒÙ€Ù† ØªÙ€ØºÙ€ÙŠÙ€Ø± Ø§Ø³Ù€Ù… Ø§Ù„Ø§Ù† Ù†Ù€ØªÙ€Ø¸Ù€Ø§Ø± Ø³Ù€Ø§Ø¹Ù€ØªÙ€Ø§Ù†**:stopwatch: ");
 } else
-  if (message.content.startsWith(adminprefix + 'xxx')) {
+  if (message.content.startsWith(adminprefix + 'ava')) {
 client.user.setAvatar(argresult);
-  message.channel.sendMessage(`**__${argresult}__ÊÜÜã ÊÜÜÛÜíÜÜÑ ÕÜÜæÑ ÇáÜì !**`);
+  message.channel.sendMessage(`**__${argresult}__ØªÙ€Ù€Ù… ØªÙ€Ù€ØºÙ€ÙŠÙ€Ù€Ø± ØµÙ€Ù€ÙˆØ± Ø§Ù„Ù€Ù‰ !**`);
       } else    
-if (message.content.startsWith(adminprefix + 'xxxx')) {
+if (message.content.startsWith(adminprefix + 'st')) {
   client.user.setGame(argresult, "https://www.twitch.tv/idk");
-    message.channel.sendMessage(`**__${argresult}__ ÊÜÜã ÊÜÛÜÜíÜÜÑ ÍÜÜÇáÜå ÇáÜÜì !**`)
+    message.channel.sendMessage(`**__${argresult}__ ØªÙ€Ù€Ù… ØªÙ€ØºÙ€Ù€ÙŠÙ€Ù€Ø± Ø­Ù€Ù€Ø§Ù„Ù€Ù‡ Ø§Ù„Ù€Ù€Ù‰ !**`)
 }
 });
